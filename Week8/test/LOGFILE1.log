@@ -1,0 +1,75 @@
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# 2d WCA system, random initial configuration
+
+#variable density equal 0.5
+variable initial_temperature equal 3.0
+variable final_temperature equal 0.1
+variable dt equal 0.01
+variable tau equal 100*${dt}
+variable tau equal 100*0.01
+variable thermo_time equal 50000*${dt}
+variable thermo_time equal 50000*0.01
+variable equil_steps equal 50000
+variable run_steps equal 100000
+
+units           lj
+atom_style      atomic
+dimension       2
+
+lattice         sq ${density}
+lattice         sq 1
+Lattice spacing in x,y,z = 1 1 1
+region          box block 0 8 0 8 0 8
+# number of atom types
+create_box      1 box
+Created orthogonal box = (0 0 0) to (8 8 8)
+  8 by 8 by 1 MPI processor grid
+create_atoms    1 box
+Created 512 atoms
+  using lattice units in orthogonal box = (0 0 0) to (8 8 8)
+  create_atoms CPU = 0.001 seconds
+mass 1 1.0
+
+velocity all create ${initial_temperature} 25000
+velocity all create 3 25000
+
+pair_style      lj/cut 1.0
+#type_1 type_2 epsilon sigma cutoff
+pair_coeff      1 1 10.0 0.89089871814 1.0
+pair_modify shift yes
+
+timestep ${dt}
+timestep 0.01
+thermo ${thermo_time}
+thermo 500
+
+fix 1 all nvt temp ${initial_temperature} ${initial_temperature} ${tau}
+fix 1 all nvt temp 3 ${initial_temperature} ${tau}
+fix 1 all nvt temp 3 3 ${tau}
+fix 1 all nvt temp 3 3 1
+run ${equil_steps}
+run 50000
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.3
+  ghost atom cutoff = 1.3
+  binsize = 0.65, bins = 13 13 13
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/2d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 2.938 | 2.938 | 2.938 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   3              0              0              2.9941406      23.953125    
+       500   3.1433289      1.7268576      0              4.8640471      264.07061    
+      1000   3.2300187      1.6605321      0              4.8842422      260.76675    
+      1500   3.1995851      1.785124       0              4.9784599      265.13613    
+      2000   3.1549942      1.5407932      0              4.6896253      243.54209    
+ERROR: Lost atoms: original 512 current 510 (src/thermo.cpp:481)
+Last command: run ${equil_steps}

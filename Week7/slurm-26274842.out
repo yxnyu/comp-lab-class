@@ -1,4 +1,0 @@
-FATAL Flags parsing error:
-  flag --max_template_date=None: Flag --max_template_date must have a value other than None.
-  flag --output_dir=None: Flag --output_dir must have a value other than None.
-Pass --helpshort or --helpfull to see help on flags.
