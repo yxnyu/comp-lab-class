@@ -17,10 +17,10 @@ Reading restart file ...
   restart file = 15 Sep 2022, LAMMPS = 15 Sep 2022
   restoring atom style atomic from restart
   orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
-  4 by 4 by 4 MPI processor grid
+  3 by 4 by 4 MPI processor grid
   restoring pair style lj/cut from restart
   360 atoms
-  read_restart CPU = 0.010 seconds
+  read_restart CPU = 0.119 seconds
 include ${pot}_particles.lmp
 include kalj_particles.lmp
 mass * 1.0 #  set mass 1.0 for all types
@@ -83,36 +83,36 @@ Neighbor list info ...
       bin: standard
 Per MPI rank memory allocation (min/avg/max) = 3.961 | 3.961 | 3.961 Mbytes
    Step          Temp          E_pair         E_mol          TotEng         Press     
-         0   0.65          -6.5254771      0             -5.5531854      6.1402021    
-     70000   0.65775434    -6.5998677      0             -5.6159768      5.799192     
-    140000   0.64202309    -6.5971778      0             -5.6368182      5.8760962    
-    210000   0.65008862    -6.5551419      0             -5.5827177      6.1000234    
-    280000   0.68142457    -6.6644959      0             -5.6451983      5.4616862    
-    350000   0.62954343    -6.5895358      0             -5.6478437      5.9849929    
-Loop time of 21.3946 on 64 procs for 350000 steps with 360 atoms
+         0   0.65          -6.5574449      0             -5.5851532      6.0512477    
+     70000   0.68893776    -6.6193133      0             -5.5887773      5.8058924    
+    140000   0.65123279    -6.5521826      0             -5.5780469      6.1342626    
+    210000   0.63055348    -6.7066559      0             -5.7634529      5.2453111    
+    280000   0.70366324    -6.6086493      0             -5.5560863      5.9097438    
+    350000   0.66391008    -6.5748075      0             -5.5817086      6.2111259    
+Loop time of 16.7793 on 48 procs for 350000 steps with 360 atoms
 
-Performance: 4240326.499 tau/day, 16359.284 timesteps/s, 5.889 Matom-step/s
-99.7% CPU use with 64 MPI tasks x 1 OpenMP threads
+Performance: 5406662.100 tau/day, 20859.036 timesteps/s, 7.509 Matom-step/s
+99.6% CPU use with 48 MPI tasks x 1 OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 0.81794    | 0.86095    | 0.93816    |   2.6 |  4.02
-Neigh   | 0.15554    | 0.16473    | 0.17553    |   1.1 |  0.77
-Comm    | 16.02      | 16.578     | 17.18      |   9.6 | 77.49
-Output  | 0.002858   | 0.0028665  | 0.0029298  |   0.0 |  0.01
-Modify  | 2.4918     | 3.135      | 3.7217     |  22.6 | 14.65
-Other   |            | 0.6532     |            |       |  3.05
+Pair    | 1.065      | 1.1368     | 1.213      |   3.1 |  6.77
+Neigh   | 0.19567    | 0.20509    | 0.21763    |   1.1 |  1.22
+Comm    | 12.46      | 12.841     | 13.321     |   6.6 | 76.53
+Output  | 0.021299   | 0.021302   | 0.021346   |   0.0 |  0.13
+Modify  | 1.6068     | 2.1404     | 2.5034     |  16.0 | 12.76
+Other   |            | 0.4343     |            |       |  2.59
 
-Nlocal:          5.625 ave           8 max           3 min
-Histogram: 2 0 6 0 21 0 22 0 11 2
-Nghost:        535.062 ave         547 max         526 min
-Histogram: 4 6 10 12 11 8 3 6 2 2
-Neighs:        325.156 ave         457 max         170 min
-Histogram: 2 3 3 11 11 6 13 7 3 5
+Nlocal:            7.5 ave          10 max           4 min
+Histogram: 1 6 0 4 0 10 14 0 10 3
+Nghost:        575.062 ave         601 max         552 min
+Histogram: 2 2 6 9 7 8 9 2 2 1
+Neighs:        433.729 ave         572 max         211 min
+Histogram: 1 1 4 6 3 6 6 9 7 5
 
-Total # of neighbors = 20810
-Ave neighs/atom = 57.805556
-Neighbor list builds = 11003
-Dangerous builds = 428
-Total wall time: 0:00:21
+Total # of neighbors = 20819
+Ave neighs/atom = 57.830556
+Neighbor list builds = 10999
+Dangerous builds = 395
+Total wall time: 0:00:17

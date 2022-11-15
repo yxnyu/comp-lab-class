@@ -17,10 +17,10 @@ Reading restart file ...
   restart file = 15 Sep 2022, LAMMPS = 15 Sep 2022
   restoring atom style atomic from restart
   orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
-  4 by 4 by 4 MPI processor grid
+  3 by 4 by 4 MPI processor grid
   restoring pair style lj/cut from restart
   360 atoms
-  read_restart CPU = 0.011 seconds
+  read_restart CPU = 0.056 seconds
 include ${pot}_particles.lmp
 include kalj_particles.lmp
 mass * 1.0 #  set mass 1.0 for all types
@@ -78,43 +78,43 @@ Neighbor list info ...
       pair build: half/bin/atomonly/newton
       stencil: half/bin/3d
       bin: standard
-Per MPI rank memory allocation (min/avg/max) = 3.96 | 3.961 | 3.961 Mbytes
+Per MPI rank memory allocation (min/avg/max) = 3.961 | 3.961 | 3.961 Mbytes
    Step          Temp          E_pair         E_mol          TotEng         Press     
-         0   1.5            5.1507673      0              7.3945173      73.855192    
-      1000   1.493271      -5.245888       0             -3.0122034      15.409888    
-      2000   1.5750702     -5.3341455      0             -2.9781031      14.80886     
-      3000   1.4614646     -5.2584798      0             -3.0723724      14.986231    
-      4000   1.4633222     -5.3490547      0             -3.1601686      14.556532    
-      5000   1.4249583     -5.1884391      0             -3.0569389      15.459507    
-      6000   1.5465019     -5.1981221      0             -2.8848131      15.373829    
-      7000   1.5167222     -5.2737077      0             -3.0049441      15.013802    
-      8000   1.5144997     -5.3495606      0             -3.0841216      14.556769    
-      9000   1.516732      -5.4121871      0             -3.1434088      14.164737    
-     10000   1.4149323     -5.1879447      0             -3.0714417      15.326896    
-Loop time of 0.664817 on 64 procs for 10000 steps with 360 atoms
+         0   1.5            6.2872555      0              8.5310055      80.502613    
+      1000   1.5579528     -5.3569944      0             -3.0265567      14.525425    
+      2000   1.630421      -5.2839533      0             -2.8451152      14.913651    
+      3000   1.4242462     -5.1198811      0             -2.9894461      15.686527    
+      4000   1.5415146     -5.3331974      0             -3.0273485      14.565156    
+      5000   1.5423355     -5.2052265      0             -2.8981497      15.38065     
+      6000   1.510896      -5.3101369      0             -3.0500883      14.787938    
+      7000   1.47807       -5.3154228      0             -3.1044764      14.735015    
+      8000   1.5399313     -5.2850541      0             -2.9815736      14.973237    
+      9000   1.4537846     -5.2965211      0             -3.1219017      14.877244    
+     10000   1.4844082     -5.2675431      0             -3.0471158      15.002443    
+Loop time of 0.523632 on 48 procs for 10000 steps with 360 atoms
 
-Performance: 2599211.412 tau/day, 15041.733 timesteps/s, 5.415 Matom-step/s
-99.6% CPU use with 64 MPI tasks x 1 OpenMP threads
+Performance: 3300026.595 tau/day, 19097.376 timesteps/s, 6.875 Matom-step/s
+99.4% CPU use with 48 MPI tasks x 1 OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 0.022024   | 0.025034   | 0.028719   |   0.8 |  3.77
-Neigh   | 0.0048093  | 0.0052467  | 0.0056424  |   0.3 |  0.79
-Comm    | 0.48248    | 0.5028     | 0.52081    |   1.6 | 75.63
-Output  | 0.001676   | 0.0016904  | 0.0017858  |   0.0 |  0.25
-Modify  | 0.083308   | 0.10589    | 0.12546    |   3.6 | 15.93
-Other   |            | 0.02415    |            |       |  3.63
+Pair    | 0.030184   | 0.033188   | 0.036144   |   0.8 |  6.34
+Neigh   | 0.0059786  | 0.0065126  | 0.007053   |   0.3 |  1.24
+Comm    | 0.35525    | 0.36815    | 0.3836     |   1.1 | 70.31
+Output  | 0.036244   | 0.036248   | 0.036284   |   0.0 |  6.92
+Modify  | 0.05172    | 0.064177   | 0.075047   |   2.3 | 12.26
+Other   |            | 0.01535    |            |       |  2.93
 
-Nlocal:          5.625 ave           9 max           3 min
-Histogram: 2 9 0 21 0 17 11 0 2 2
-Nghost:        535.156 ave         548 max         518 min
-Histogram: 1 1 4 6 8 12 10 12 7 3
-Neighs:        324.531 ave         575 max         168 min
-Histogram: 4 5 12 12 14 11 4 1 0 1
+Nlocal:            7.5 ave          10 max           5 min
+Histogram: 5 0 7 0 11 0 12 0 10 3
+Nghost:        578.125 ave         590 max         562 min
+Histogram: 2 3 3 4 3 6 11 8 5 3
+Neighs:        432.333 ave         630 max         259 min
+Histogram: 5 2 5 5 9 7 7 6 1 1
 
-Total # of neighbors = 20770
-Ave neighs/atom = 57.694444
-Neighbor list builds = 350
-Dangerous builds = 10
-Total wall time: 0:00:00
+Total # of neighbors = 20752
+Ave neighs/atom = 57.644444
+Neighbor list builds = 347
+Dangerous builds = 12
+Total wall time: 0:00:01
