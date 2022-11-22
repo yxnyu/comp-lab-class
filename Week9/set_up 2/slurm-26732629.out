@@ -1,0 +1,168 @@
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T2_n360_v300_10000_1.final.lmprestart.10000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T1.5_n360_v300_10000_1.final.lmprestart.10000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T1_n360_v300_50000_1.final.lmprestart.50000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.9_n360_v300_150000_1.final.lmprestart.150000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.8_n360_v300_150000_1.final.lmprestart.150000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.7_n360_v300_180000_1.final.lmprestart.180000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.65_n360_v300_350000_1.final.lmprestart.350000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.6_n360_v300_1000000_1.final.lmprestart.1000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.55_n360_v300_3000000_1.final.lmprestart.3000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.5_n360_v300_10000000_1.final.lmprestart.10000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.475_n360_v300_30000000_1.final.lmprestart.30000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.45_n360_v300_100000000_1.final.lmprestart.100000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${steps}
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
