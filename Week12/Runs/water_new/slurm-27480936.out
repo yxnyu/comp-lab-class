@@ -1,0 +1,30 @@
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/    An integer type object was expected, found <___FILL_IN___>, File: *
+ *    |          'water.inp', Line: 100, Column: 2, Chunk: <___FILL_IN___>     *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                          input/cp_parser_methods.F:1037 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            5 val_create_parsing
+            4 section_vals_parse
+            3 section_vals_parse
+            2 section_vals_parse
+            1 read_input
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[warn] Epoll MOD(1) on fd 25 failed.  Old events were 6; read change was 0 (none); write change was 2 (del): Bad file descriptor
+[warn] Epoll MOD(4) on fd 25 failed.  Old events were 6; read change was 2 (del); write change was 0 (none): Bad file descriptor

@@ -1,0 +1,27 @@
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/   The specified OLD file <WATER-1.restart> cannot be opened. It does *
+ *    |     not exist. Data directory path: /home/wang/cp2k-20201212/cp2k/data *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   common/cp_files.F:395 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            2 handle_ext_restart
+            1 check_cp2k_input
+[warn] Epoll MOD(1) on fd 24 failed.  Old events were 6; read change was 0 (none); write change was 2 (del): Bad file descriptor
+[warn] Epoll MOD(4) on fd 24 failed.  Old events were 6; read change was 2 (del); write change was 0 (none): Bad file descriptor
