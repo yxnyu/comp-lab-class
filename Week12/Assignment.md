@@ -10,7 +10,7 @@ In this lab, you will use the code cp2k to run AIMD simulations of water, and a 
 	- Edit water.inp and replace `___FILL_IN___` with
 		- A project name, such as, water_aimd_1ns_every0.5fs
 		- A `WALLTIME` of 6 hours, **in seconds**
-		- `STEPS` corresponding to 1 nanosecond. How many steps is this??
+		- `STEPS` corresponding to 1 picosecond. How many steps is this??
 	- Create an sbatch file to run this job with
 		- 1 cpu per task
 		- 12 tasks per node
@@ -28,7 +28,7 @@ In this lab, you will use the code cp2k to run AIMD simulations of water, and a 
 3. Add an extra hydrogen to the `proton.xyz` file in a file editor:
 	- Visualize the xyz file in vmd, and find an oxygen that is kind of near the middle of the box. Which atom index is this? In the xyz file, you should see that this is kind of close to position 0,0,0
 	- Find this oxygen in the xyz file, duplicate it's line, change 'O' to 'H', and shift x y or z by 1 angstrom (at least, this is what I did)
-	- Change the number of atoms at the top to be bigger than 1
+	- Change the number of atoms at the top to be bigger by 1
 	- Change the total system charge in the `.inp` file to be 1
 4. Copy the sbatch file from the water directory, adjust it for proton, and submit it
 
