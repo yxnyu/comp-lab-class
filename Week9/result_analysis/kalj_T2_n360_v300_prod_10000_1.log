@@ -1,0 +1,63 @@
+
+include ${pot}.lmp
+include kalj.lmp
+units lj
+atom_style atomic
+
+variable dimensions equal 3
+variable density equal 1.2
+variable fraca equal 0.8
+
+dimension ${dimensions}
+dimension 3
+read_restart ${prevbasename}.final.lmprestart.${steps}
+read_restart equil/kalj_T2_n360_v300_10000_1.final.lmprestart.${steps}
+read_restart equil/kalj_T2_n360_v300_10000_1.final.lmprestart.10000
+Reading restart file ...
+  restart file = 15 Sep 2022, LAMMPS = 15 Sep 2022
+WARNING: Restart file used different # of processors: 48 vs. 64 (src/read_restart.cpp:659)
+  restoring atom style atomic from restart
+  orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  4 by 4 by 4 MPI processor grid
+  restoring pair style lj/cut from restart
+  360 atoms
+  read_restart CPU = 0.033 seconds
+include ${pot}_particles.lmp
+include kalj_particles.lmp
+mass * 1.0 #  set mass 1.0 for all types
+
+pair_style lj/cut 2.5
+#pair coeffs type1 type2 eps sigma
+pair_coeff 1 1 1.0 1.00 2.5
+pair_coeff 1 2 1.5 0.80 2.0
+pair_coeff 2 2 0.5 0.88 2.2
+pair_modify shift yes
+reset_timestep 0
+
+print "Setting up equilibration run"
+Setting up equilibration run
+variable dumptime2 equal ${steps}/2000
+variable dumptime2 equal 10000/2000
+dump 1 all dcd ${dumptime2} ${basename}.unwrap.dcd
+dump 1 all dcd 5 ${basename}.unwrap.dcd
+dump 1 all dcd 5 prod/kalj_T2_n360_v300_prod_10000_1.unwrap.dcd
+#dump 2 all dcd ${dumptime2} ${basename}.dcd
+dump_modify 1 unwrap yes
+#dump_modify 2 unwrap no
+
+restart ${restarttime} ${basename}.restart
+restart 10000 ${basename}.restart
+restart 10000 prod/kalj_T2_n360_v300_prod_10000_1.restart
+restart ${steps} ${basename}.final.lmprestart
+restart 10000 ${basename}.final.lmprestart
+restart 10000 prod/kalj_T2_n360_v300_prod_10000_1.final.lmprestart
+
+thermo ${thermotime}
+thermo 1000
+timestep ${timestep}
+timestep 0.001
+
+neighbor 0.5 bin
+neigh_modify every 1 delay ${neighborstep} check yes
+ERROR on proc 0: Substitution for illegal variable neighborstep (src/input.cpp:650)
+Last command: neigh_modify every 1 delay ${neighborstep} check yes

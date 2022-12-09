@@ -1,0 +1,1 @@
+{"systype":null,"dimensions":["42","42","42","90.0","90.0","90.0"],"input":["gromacs"],"forcefield":{"type":"amber","files":["leaprc.protein.ff19SB","leaprc.water.opc"],"custom":[],"wtype":"OPC","itype":"12-6"},"hmr":false}

@@ -1,0 +1,183 @@
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.4938016 1.4938016 1.4938016
+Created orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  4 by 4 by 4 MPI processor grid
+Created 365 atoms
+  using lattice units in orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  create_atoms CPU = 0.002 seconds
+Setting atom values ...
+  77 settings made for type
+5 atoms in group extra
+Deleted 5 atoms, new total = 360
+288 atoms in group typea
+72 atoms in group typeb
+Minimizing initial structure
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 3
+  ghost atom cutoff = 3
+  binsize = 1.5, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 2.967 | 3.946 | 3.966 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              28.727941      0              28.727941      186.35386    
+      1000   15.697915      5.0786413      0              28.560106      90.310807    
+      2000   15.158934      5.8879547      0              28.563194      94.282307    
+      3000   15.92877       4.7320291      0              28.558815      88.926987    
+      4000   15.111296      5.9569495      0              28.560929      94.684126    
+      5000   15.344458      5.6076141      0              28.560367      93.516277    
+      6000   15.662022      5.133185       0              28.560959      91.310718    
+      7000   15.908323      4.7646953      0              28.560895      89.317362    
+      8000   15.451357      5.4492862      0              28.561941      91.971306    
+      9000   15.403264      5.5200208      0              28.560736      92.702153    
+     10000   15.650399      5.1507673      0              28.561156      90.788502    
+Loop time of 0.627958 on 64 procs for 10000 steps with 360 atoms
+
+Performance: 1375889.268 tau/day, 15924.644 timesteps/s, 5.733 Matom-step/s
+99.6% CPU use with 64 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.024127   | 0.026329   | 0.033734   |   0.8 |  4.19
+Neigh   | 0.0080527  | 0.0086938  | 0.0093369  |   0.3 |  1.38
+Comm    | 0.46336    | 0.48465    | 0.50515    |   1.5 | 77.18
+Output  | 0.0030545  | 0.003084   | 0.0031378  |   0.0 |  0.49
+Modify  | 0.0017094  | 0.0018264  | 0.0020596  |   0.2 |  0.29
+Other   |            | 0.1034     |            |       | 16.46
+
+Nlocal:          5.625 ave           8 max           2 min
+Histogram: 2 1 0 9 0 18 18 0 9 7
+Nghost:        533.703 ave         553 max         514 min
+Histogram: 2 2 6 9 11 12 10 8 1 3
+Neighs:        323.391 ave         520 max         129 min
+Histogram: 3 2 7 10 10 9 12 5 5 1
+
+Total # of neighbors = 20697
+Ave neighs/atom = 57.491667
+Neighbor list builds = 584
+Dangerous builds = 0
+Total wall time: 0:00:00
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ERROR on proc 0: Cannot open input script ../Inputs/anneal_3d_binary.lmpecho: No such file or directory (src/lammps.cpp:521)
+Last command: (unknown)

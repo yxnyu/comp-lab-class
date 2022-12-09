@@ -1,0 +1,24 @@
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# 2d WCA system, random initial configuration
+
+#variable density equal 0.5
+variable initial_temperature equal 3.0
+variable final_temperature equal 0.1
+variable dt equal 0.01
+variable tau equal 100*${dt}
+variable tau equal 100*0.01
+variable thermo_time equal 50000*${dt}
+variable thermo_time equal 50000*0.01
+variable equil_steps equal 50000
+variable run_steps equal 100000
+
+units           lj
+atom_style      atomic
+dimension       2
+
+lattice         sq ${density}
+lattice         sq {0.5..1.1}
+ERROR: Expected floating point parameter instead of '{0.5..1.1}' in input script or data file (src/lattice.cpp:85)
+Last command: lattice         sq ${density}

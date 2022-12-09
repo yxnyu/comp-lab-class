@@ -1,0 +1,44 @@
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+include ${configfile}
+include ../Inputs/n360/kalj_n360_T0.45.lmp
+variable pot string "kalj"
+variable natoms equal 360
+variable volume equal 300
+
+variable prevtemp equal 0.475
+variable prevsteps equal 30000000
+
+variable temp equal 0.45
+variable steps equal 100000000
+
+variable timestep equal 0.003
+variable dumptime equal ${steps}/10
+variable dumptime equal 100000000/10
+variable neighborstep equal 25
+
+variable restarttime equal ${steps}
+variable restarttime equal 100000000
+variable thermotime equal ${steps}/100
+variable thermotime equal 100000000/100
+variable taut equal ${timestep}*100
+variable taut equal 0.003*100
+
+shell mkdir prod
+variable prevbasename string equil/${pot}_T${temp}_n${natoms}_v${volume}_${steps}_${id}
+variable prevbasename string equil/kalj_T${temp}_n${natoms}_v${volume}_${steps}_${id}
+variable prevbasename string equil/kalj_T0.45_n${natoms}_v${volume}_${steps}_${id}
+variable prevbasename string equil/kalj_T0.45_n360_v${volume}_${steps}_${id}
+variable prevbasename string equil/kalj_T0.45_n360_v300_${steps}_${id}
+variable prevbasename string equil/kalj_T0.45_n360_v300_100000000_${id}
+variable prevbasename string equil/kalj_T0.45_n360_v300_100000000_1
+variable basename string prod/${pot}_T${temp}_n${natoms}_v${volume}_prod_${steps}_${id}
+variable basename string prod/kalj_T${temp}_n${natoms}_v${volume}_prod_${steps}_${id}
+variable basename string prod/kalj_T0.45_n${natoms}_v${volume}_prod_${steps}_${id}
+variable basename string prod/kalj_T0.45_n360_v${volume}_prod_${steps}_${id}
+variable basename string prod/kalj_T0.45_n360_v300_prod_${steps}_${id}
+variable basename string prod/kalj_T0.45_n360_v300_prod_100000000_${id}
+variable basename string prod/kalj_T0.45_n360_v300_prod_100000000_1
+log ${basename}.log
+log prod/kalj_T0.45_n360_v300_prod_100000000_1.log

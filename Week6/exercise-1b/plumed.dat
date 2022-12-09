@@ -1,0 +1,10 @@
+# Activate MOLINFO functionalities
+#MOLINFO STRUCTURE=dialaA.pdb 
+# Compute the backbone dihedral angle phi, defined by atoms C-N-CA-C
+# you should use MOLINFO shortcuts
+phi: TORSION ATOMS=3,5,7,13
+# Compute the backbone dihedral angle psi, defined by atoms N-CA-C-N
+# here also you should to use MOLINFO shortcuts
+psi: TORSION ATOMS=3,7,13,15 
+# Print the two collective variables on COLVAR file every step
+PRINT ARG=* FILE=COLVAR STRIDE=100
